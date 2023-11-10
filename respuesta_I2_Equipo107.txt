@@ -10,3 +10,5 @@ git fetch upstream
 git checkout master
 git merge upstream/master
 
+b-¿Puede ALFA actualizar su FORK al estado del fork de GAMMA?
+Si se peude, utilizando los pasos anteriores utilizados en el punto A, pero cambiando el nombre del upstream por uno identificativo.
