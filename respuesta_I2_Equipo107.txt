@@ -19,3 +19,117 @@ Si puede, comprobado utilizando merge.
 d-¿Los datos que tenía en mi repositorio , editados por mi, se pierden si quiero actualizar
 el fork?
 No, si hay archivos iguales se pueden sumar los datos de ambos y si hay archivos nuevos se agregan al repositorio.
+
+e-realizar un listado, paso a paso ,de los comando necesarios para resolver este TP por
+orden de ejecución de los mismos junto con los apellidos y nombre de los alumnos
+
+Id CommandLine
+ -- -----------
+    Martin Simone:
+
+    git clone https://github.com/Martiin542/TP_SO_i2_107.git
+    git init
+    git clone https://github.com/Martiin542/TP_SO_i2_107.git
+    git add .
+    git init
+    git status
+    git add fork.txt
+    git commit -m 'commit gamma'
+ -- -----------
+    Matias Altamira:
+
+    git clone https://github.com/Matias658/TP_SO_i2_107.git
+    git add .
+    git commit -m "Alfa modifica el archivo fork.txt"
+    git push origin master
+    git push
+  -- -----------
+    Tomas Behrens:
+
+    git add NuevoDato.txt
+    git commit -m "NuevoDato.txt creado"
+    git push origin
+  -- -----------
+    Martin Simone:
+
+    git push origin
+    git remote add upstream https://github.com/Behrens0/TP_SO_i2_107.git
+    git fetch upstream
+    git checkout main
+    git merge upstream/main
+    git status
+    git add NuevoDato.txt
+    git commit -m 'upstream gamma'
+    git push
+  -- -----------
+    Matias Altamira:
+
+    git remote add upstream https://github.com/Behrens0/TP_SO_i2_107.git
+    git fetch upstream
+    git checkout main
+    git merge upstream/main
+    git status
+    git push origin
+  -- -----------
+    Tomas Behrens:
+
+    git add respuesta_I2_EquipoX.txt
+    git commit -m "Se agrego el archivo de respuestas"
+    git push origin
+    git commit -m "Se cambio el nombre del archivo respuestas"
+    git commit -a -m "Se cambio el nombre del archivo respuestas"
+    git push origin
+    git add respuesta_I2_Equipo107.txt
+    git commit -a -m "Se cambio el nombre del archivo respuestas"
+    git push origin
+  -- -----------
+    Martin Simone:
+    git status
+    git fetch upstream
+    git checkout main
+    git merge upstream/main
+    git status
+    git add respuesta_I2_Equipo107.txt
+    git status
+    git add respuesta_I2_Equipo107.txt
+    git status
+    git commit -m 'respuesta A gamma'
+    git push origin
+  -- -----------
+    Matias Altamira:
+
+    git fetch upstream
+    git checkout main
+    git remote add upmartin https://github.com/Martiin542/TP_SO_i2_107
+    git fetch upmartin
+    git checkout main
+    git merge upstream/main
+    git merge upmartin/main
+    git add .
+    git commit -m "prueba respuesta B"
+    git push origin
+    git merge upstream/main
+    git fetch upstream
+    git merge upstream/main
+  -- -----------
+    Martin Simone:
+
+    git remote add matias https://github.com/Matias658/TP_SO_i2_107.git
+    git fetch matias
+    git checkout main
+    git merge upstream/main
+    git merge matias/main
+    git status
+    git status
+    git push origin
+    git status
+    git add respuesta_I2_Equipo107.txt
+    git commit -m 'respuesta B gamma'
+    git push origin
+  -- -----------
+    Tomas Behrens:
+
+    git pull
+    git commit -a -m "Respuestas c y d"
+    git push origin
+    
