@@ -11,4 +11,11 @@ git checkout master
 git merge upstream/master
 
 b-¿Puede ALFA actualizar su FORK al estado del fork de GAMMA?
-Si se peude, utilizando los pasos anteriores utilizados en el punto A, pero cambiando el nombre del upstream por uno identificativo.
+Si se puede, utilizando los pasos anteriores utilizados en el punto A, pero cambiando el nombre del upstream por uno identificativo.
+
+c-¿Puede GAMMA actualizar su FORK al estado del fork de ALFA?
+Si puede, comprobado utilizando merge.
+
+d-¿Los datos que tenía en mi repositorio , editados por mi, se pierden si quiero actualizar
+el fork?
+No, si hay archivos iguales se pueden sumar los datos de ambos y si hay archivos nuevos se agregan al repositorio.
