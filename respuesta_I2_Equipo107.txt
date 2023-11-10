@@ -1,3 +1,12 @@
 Behrens Tomas
 Matias Altamira
 Martin Simone
+
+a-¿Como actualizo mi repositorio, al estado que esté el repo que hice FORK?
+Para realizar la tarea utilizamos un MERGING, une dos ramas de dos repositorios diferentes.
+Comandos utilizados para realizar la tarea:
+git remote add upstream https://github.com/Behrens0/TP_SO_i2_107
+git fetch upstream 
+git checkout master
+git merge upstream/master
+
